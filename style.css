@@ -1,0 +1,119 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  /* Container principal */
+  .campo {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 380px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Título */
+  .campo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #4b0082; /* Roxo escuro elegante */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  /* Linha decorativa abaixo do título */
+  .campo h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #7b6ef6;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+  
+  
+  /* Grupos de campos */
+  .grupo {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Inputs */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #7b6ef6;
+    outline: none;
+    background-color: #f9f9ff;
+  }
+  
+  /* Botão */
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b6ef6;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(123, 110, 246, 0.3);
+  }
+  
+  button:hover {
+    background-color: #695ae0;
+  }
+  
+  /* Resultado em destaque */
+  #Resultado {
+    background-color: #f4f4f9;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
